@@ -1,0 +1,311 @@
+/**
+ * James Joyce - One fine day
+ * 
+ * @author Joshua Baker <http://www.joshuabaker.co.uk/>
+ * @version 1.0.0
+ */
+
+/* Global */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	list-style: none;
+}
+body {
+      font-family: 'open sans';
+	font-size: 10px;
+	font-weight:100;
+	line-height: 16px;
+	background-color: #ffffff;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 98;
+	color: #a3a3a3;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 100;
+	color: #a3a3a3;
+	
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 100;
+	color: #a3a3a3;
+
+}
+
+h5 {
+	font-size: 28px;
+	font-weight: 100;
+	font-color: #FFFFFF;
+	
+}
+
+h6 {
+	font-size: 20px;
+	font-weight: 100;
+	font-color: #FFFFFF;
+
+}
+
+a {
+	text-decoration: none;
+	color: #a3a3a3;
+	-moz-outline: none;
+}
+
+	a:link {color:#000000;}    /* unvisited link */
+	a:visited {color:#000000;}  /* visited link */
+	a:hover {color:#3FE0D0;}   /* mouse over link */
+}
+ <!-- a.mailto:hover {
+	color: #ff0000;
+}
+-->
+p {
+	margin-bottom: 15px;
+}
+hr {
+	width: 100%;
+	height: 2px;
+	margin-bottom: 5px;
+	background-image: url('http://behance.vo.llnwd.net/rendition/modules/90114547/disp/6c569286f3b6b289b0ad8fb99c2f230a.gif');
+}
+.hidden {
+	display: none;
+}
+
+div.information p, p.no-margin {
+  margin-bottom: 5px;
+}
+
+/* Header - Menu */
+ul#menu a {
+	display: block;
+	width: 100px;
+	height: 20px;
+	margin-top: 15px;
+}
+ul#menu a#menu-work {
+	background-image: url("assets/images/menu-work.gif");
+}
+ul#menu a#menu-work:hover {
+	background-position-y: -20px;
+	background-position: 0 -20px;
+}
+ul#menu a#menu-profile {
+	background-image: url("assets/images/menu-profile.gif");
+}
+ul#menu a#menu-profile:hover {
+	background-position-y: -20px;
+	background-position: 0 -20px;
+}
+ul#menu a#menu-contact {
+	background-image: url("assets/images/menu-contact.gif");
+}
+ul#menu a#menu-contact:hover {
+	background-position-y: -20px;
+	background-position: 0 -20px;
+}
+ul#menu a#menu-shop {
+	height: 25px;
+	background-image: url("assets/images/menu-shop.gif");
+}
+ul#menu a#menu-shop:hover {
+	background-position-y: -25px;
+	background-position: 0 -25px;
+}
+
+/* Content (vertical-align: middle) */
+div#content {
+	width: auto !important;
+	width: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -280px;
+}
+div.dots {
+	background-image: url('http://behance.vo.llnwd.net/rendition/modules/90114547/disp/6c569286f3b6b289b0ad8fb99c2f230a.gif');
+}
+div.horizontal {
+	width: 100%;
+	height: 2px;
+}
+
+/* Project List Table (also contains navigation) */
+table#project-list {
+	table-layout: fixed;
+}
+table#project-list td {
+	vertical-align: auto;
+}
+
+/* Project List Table - Divider */
+div.divider {
+	width: 2px;
+	height: 530px;
+	background-image: url('http://behance.vo.llnwd.net/rendition/modules/90114547/disp/6c569286f3b6b289b0ad8fb99c2f230a.gif');	
+	background-position-x: -2px;
+	background-position-y: -3px;
+	background-position: -2px -3px;
+}
+
+/* Navigation */
+div#navigation {
+	width: 300px;
+}
+
+/* Navigation - Logotype */
+div#navigation div#logotype {
+	margin: 22px;
+}
+
+/* Navigation - Menu */
+div#navigation ul {
+	position: absolute;
+	bottom: 0px;
+	margin: 22px;
+}
+
+/* Project */
+div.block {
+	height: 470px !important;
+	height: 500px;
+	padding: 15px;
+}
+
+/* Project - Information */
+div.block div.information {
+	display: none;
+	width: 300px;
+	padding: 10px 25px 10px 10px;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 2;
+}
+div.block:hover div.information {
+	display: block;
+}
+
+/* Project - Information - Links */
+div.block div.information ul.links {
+	margin-top: 20px;
+}
+div.block div.information ul.links li {
+	float: left;
+	margin-right: 10px;
+}
+div.block div.information ul.links li img {
+	position: relative;
+	top: 2px;
+	margin-right: 2px;
+}
+div.block div.information ul.links li a.red-link:hover {
+	color: #ff0000;
+}
+div.block div.information ul.links li a.blue-link:hover {
+	color: #00c6ff;
+}
+
+/* Project - Image */
+div.block div.image img {
+	max-height: 490px;
+}
+
+/* Project - Extras */
+div.block ul.extras {
+	position: relative;
+	top: 10px;
+}
+div.block ul.extras li {
+	float: left;
+	margin-right: 10px;
+}
+
+/* Product Page */
+div.image_b img {
+	height: auto !important;
+	height: 250px;
+	max-height: 250px;
+	margin-bottom: 10px;
+}
+div.product-info {
+	width: auto !important;
+	width: 300px;
+	min-width: 300px;
+	height: 250px;
+}
+div.product-info hr {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div.product-description {
+	float: left;
+	width: auto !important;
+	width: 300px;
+	max-width: 300px;
+}
+div.product-payment {
+	float: right;
+	text-align: right;
+}
+
+/* Profile Page */
+p.profile_client_list_2 {
+  margin-top: 35px;
+}
+
+/* Shop */
+div.shop-images img {
+	height: auto !important;
+	height: 252px;
+	max-height: 252px;
+}
+
+/* Links */
+a.link-back {
+  display: block;
+  width: 53px;
+  height: 20px;
+	background-image: url("assets/images/link-back.gif");
+	background-repeat: no-repeat;
+}
+a.link-archive {
+  display: block;
+  width: 86px;
+  height: 20px;
+	background-image: url("assets/images/link-archive.gif");
+	background-repeat: no-repeat;
+}
+a.link-back:hover, a.link-archive:hover {
+	background-position-y: -20px;
+	background-position: 0 -20px;
+}
+
+div.link-archive-holder {
+  width: 100px;
+  height: 480px;
+}
+div.link-archive-holder a.link-archive, div.link-archive-holder a.link-back {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 22px;
+}
+
+div.link-back-holder {
+  float: right;
+}
+div.link-back-holder a.link-back {
+  margin-top: -42px;  
+}
+
+
